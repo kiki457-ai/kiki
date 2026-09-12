@@ -1,21 +1,17 @@
-name: CI Checks
+# Copy this file into your assignment repo as .github/workflows/check.yml
+# and push. From then on every push gets a tick or a cross on GitHub, and the
+# Actions tab shows the same checklist `uv run check.py` prints on your machine.
+name: Assignment check
 
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-      - name: Run check script
-        run: |
-          pip install uv
-          uv run https://raw.githubusercontent.com/sd5913/pfad/2026/assignments/check.py
+    uses: sd5913/pfad/.github/workflows/check-assignment.yml@2026
+    with:
+      assignment: "1"
