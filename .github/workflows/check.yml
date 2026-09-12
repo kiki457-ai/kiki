@@ -1,0 +1,21 @@
+name: CI Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Run check script
+        run: |
+          pip install uv
+          uv run https://raw.githubusercontent.com/sd5913/pfad/2026/assignments/check.py
