@@ -36,7 +36,9 @@ This is the gap. Describing an outcome is not specifying it. Specification requi
 Will this course become obsolete? Not if we understand its purpose. Syntax changes — languages evolve, frameworks rise and fall, AI absorbs more writing. But habits from working closely with code — debugging, reading logic, thinking in constraints — are design skills. They survive any language: debugging recognises failure modes; reading logic reconstructs intent; thinking in constraints engages with material properties, not grammar. They separate holding a material from pointing at it.
 
 Peng et al. (2025) suggest future tools will compose constraints and prompts through embodied interaction — still demanding designer judgment about material limits. I came expecting to write code; I hope to leave able to read it, feel its grain, and know when the machine gives something that looks right but is not.
+
 ---
+
 ## References
 
 Dong, Y., Jiang, X., Jin, Z., & Li, G. (2023). Self-collaboration code generation via ChatGPT. *arXiv*. https://doi.org/10.48550/arXiv.2304.07590

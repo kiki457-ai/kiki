@@ -18,7 +18,6 @@ Process placeholder
 
 **What I changed:** Cut the efficiency argument about the AI re-reading the codebase — it reads as a tool complaint and dates fast. Unified person and tense, and changed "last semester" to "autumn 2025."
 
-## The Gap Between Description and Specification
 
 ## The Gap Between Description and Specification
 
